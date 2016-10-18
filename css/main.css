@@ -39,21 +39,19 @@ p {
 
 /** LISTS **/
 
-.print,
-.italic {
+dd {
   display: inline-block;
   list-style-type: none;
-  line-height: 1.5;
-  padding-top: 0.5rem;
-  padding-left: 1rem;
+  padding-left: 3rem;
+  padding-top: 0;
   font-family: Georgia;
+  font-style: italic;
   font-size: 0.875rem;
   color: #512200;
 }
 
-.italic {
-  font-style: italic;
-}
+
+/** BUTTON **/
 
 .btn-wrap {
   display: inline-block;
