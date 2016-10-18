@@ -7,32 +7,75 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 .link-card {
-  list-style-type: none;
-  text-decoration: none;
-}
-
-.link-card:hover {
-  background-color: red;
-}
-
-.wrapper {
   background-color: #dcd4cd;
   border-style: solid;
   border-color: #9a816d;
-  border-radius: 3px;
+  border-radius: 8px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
 }
 
 .link-card h2 {
   font-size: 1.5rem;
   font-family: "Dosis", sans-serif;
   color: #512200;
-  padding-left: 1rem;
+  margin-top: 0;
+  padding-top: 0.25rem;
+  padding-left: 0.5rem;
 }
 
 p {
   font-family: Georgia;
   line-height: 1.5;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   color:#512200;
+}
+
+/** LISTS **/
+
+.print,
+.italic {
+  display: inline-block;
+  list-style-type: none;
+  line-height: 1.5;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-family: Georgia;
+  font-size: 0.875rem;
+  color: #512200;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.btn-wrap {
+  display: inline-block;
+  text-align: center;
+  background-color: #785439;
+  border-radius: 3px;
+  color: #fff;
+  padding: 2em;
+}
+
+.btn {
+  font-family: "Dosis", sans-serif;
+}
+
+/** HOVERING STATE **/
+
+.link-card:hover {
+  background-color: #cabdb2;
+  cursor: pointer;
+}
+
+.link-card:hover .btn-wrap {
+  background-color: #512200;
+  cursor: pointer;
 }
