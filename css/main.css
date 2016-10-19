@@ -12,6 +12,7 @@ body {
 }
 
 .link-card {
+  display: inline-block;
   background-color: #dcd4cd;
   border-style: solid;
   border-color: #9a816d;
@@ -27,43 +28,54 @@ body {
   color: #512200;
   margin-top: 0;
   padding-top: 0.25rem;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
 }
 
 p {
   font-family: Georgia;
   line-height: 1.5;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color:#512200;
 }
 
 /** LISTS **/
 
+dt {
+  list-style-type: none;
+  font-family: Georgia;
+  font-size: 0.875rem;
+  color: #512200;
+  padding-left: 1rem;
+  line-height: 0.2;
+}
+
 dd {
   display: inline-block;
   list-style-type: none;
-  padding-left: 3rem;
-  padding-top: 0;
+  padding-left: 6rem;
   font-family: Georgia;
   font-style: italic;
   font-size: 0.875rem;
   color: #512200;
 }
 
-
 /** BUTTON **/
 
 .btn-wrap {
   display: inline-block;
-  text-align: center;
   background-color: #785439;
-  border-radius: 3px;
+  border-radius: 8px;
   color: #fff;
-  padding: 2em;
+  padding: 0.4em 0.75em 0.5em;
+  margin-left: 7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .btn {
   font-family: "Dosis", sans-serif;
+  text-align: center;
 }
 
 /** HOVERING STATE **/
@@ -76,4 +88,13 @@ dd {
 .link-card:hover .btn-wrap {
   background-color: #512200;
   cursor: pointer;
+}
+
+/** HORIZONTAL LINE **/
+
+.borderline {
+  border-bottom: 1px solid  #9a816d;
+  border-top: 1px solid  #9a816d;
+  width: 20rem;
+  margin-left: 1rem;
 }
